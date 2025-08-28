@@ -40,13 +40,13 @@ Then open: [http://localhost:5000](http://localhost:5000)
 
 ## GitHub Actions CI/CD
 This repo includes a GitHub Actions workflow (`.github/workflows/ci.yml`) that runs on every push/PR to `main`:
-- ✅ Install dependencies
-- ✅ Run Pytest tests
-- ✅ Build Docker image
+- Install dependencies
+- Run Pytest tests
+- Build Docker image
 
 CI status badge is shown at the top of this README.
 
 ## Notes
-- Storage is **in-memory only** for simplicity (meets the assignment scope).
+- Storage is **in-memory only** for simplicity.
 - For production, add a database and persist workouts.
 - Add secrets in GitHub if pushing to DockerHub or deploying.
