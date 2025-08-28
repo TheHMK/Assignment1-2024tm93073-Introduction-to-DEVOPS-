@@ -1,6 +1,6 @@
 # ACEest Fitness & Gym – DevOps Assignment
 
-![CI](https://github.com/your-username/your-repo/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/TheHMK/Assignment1-2024tm93073-Introduction-to-DEVOPS-/actions/workflows/ci.yml/badge.svg)
 
 A minimal Flask API for logging workouts, packaged with tests, Docker, and a GitHub Actions CI pipeline.
 
