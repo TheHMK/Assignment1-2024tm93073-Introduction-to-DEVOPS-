@@ -1,5 +1,7 @@
 # ACEest Fitness & Gym – DevOps Assignment
 
+![CI](https://github.com/your-username/your-repo/actions/workflows/ci.yml/badge.svg)
+
 A minimal Flask API for logging workouts, packaged with tests, Docker, and a GitHub Actions CI pipeline.
 
 ## Endpoints
@@ -14,7 +16,7 @@ python app.py
 # open http://127.0.0.1:5000/
 ```
 
-## Quick test with curl
+## Quick Test with curl
 ```bash
 curl -X POST http://127.0.0.1:5000/add_workout       -H "Content-Type: application/json"       -d '{ "workout": "Running", "duration": 30 }'
 
@@ -26,21 +28,25 @@ curl http://127.0.0.1:5000/workouts
 pytest
 ```
 
-## Docker
+## Docker Usage
+Build and run the app inside a container:
+
 ```bash
 docker build -t aceest-fitness .
 docker run -p 5000:5000 aceest-fitness
 ```
 
-## GitHub Actions
-CI runs on every push / PR to `main`:
-- Install deps
-- Run `pytest`
-- Build Docker image
-```yaml
-.github/workflows/ci.yml
-```
+Then open: [http://localhost:5000](http://localhost:5000)
+
+## GitHub Actions CI/CD
+This repo includes a GitHub Actions workflow (`.github/workflows/ci.yml`) that runs on every push/PR to `main`:
+- ✅ Install dependencies
+- ✅ Run Pytest tests
+- ✅ Build Docker image
+
+CI status badge is shown at the top of this README.
 
 ## Notes
-- Storage is in-memory for simplicity. 
+- Storage is **in-memory only** for simplicity (meets the assignment scope).
 - For production, add a database and persist workouts.
+- Add secrets in GitHub if pushing to DockerHub or deploying.
