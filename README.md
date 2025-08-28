@@ -42,5 +42,5 @@ CI runs on every push / PR to `main`:
 ```
 
 ## Notes
-- Storage is in-memory for simplicity (meets the assignment scope).
+- Storage is in-memory for simplicity.
 - For production, add a database and persist workouts.
