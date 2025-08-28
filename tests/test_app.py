@@ -1,4 +1,9 @@
+import sys, os
 import json
+
+# Ensure app.py (in repo root) is discoverable when running tests from tests/ dir
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 from app import app
 
 def test_home():
