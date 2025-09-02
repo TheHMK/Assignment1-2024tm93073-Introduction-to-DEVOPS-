@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# In-memory storage (for demo purposes)
+# In-memory storage
 workouts = []
 
 @app.route("/")
